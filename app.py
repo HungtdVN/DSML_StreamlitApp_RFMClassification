@@ -815,7 +815,7 @@ def main():
                 <div class="insight-box">
                     <h4>📊 RFM Segment Analysis</h4>
                     <p><strong>Number of Customers:</strong> {df_rfm_labeled['customer_id'].nunique()}</p>
-                    <p><strong>Total Revenue:</strong> {df_rfm_labeled['monetary'].sum():,.2f} VND</p>
+                    <p><strong>Total Revenue:</strong> {df_rfm_labeled['monetary'].sum():,.2f} USD</p>
                 </div>
                 """, unsafe_allow_html=True)
                 st.dataframe(rfm_agg)
@@ -840,8 +840,8 @@ def main():
         
         st.markdown("""
         <div class="warning-box">
-        <h4>⚠️ Warning</h4>
-        <p>This page is intended for those who require a deep understanding of the analysis process.</p>
+        <h4>⚠️ Notice</h4>
+        <p>This page is intended for those who inquire a deep understanding of the analysis process.</p>
         </div>
         """, unsafe_allow_html=True)
         
